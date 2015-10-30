@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="sRHd8720HhFuyoHvWVmek80F-7_bUbtWGlV3LN4Rpgs" />
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Allura&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" type="image/ico" href="/img/favicon.ico" />
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script>
+    /*Uploadcare*/
+    UPLOADCARE_PUBLIC_KEY = 'c0190d28b2a857d0f1d6';
+    UPLOADCARE_LOCALE = 'lv';
+    UPLOADCARE_LOCALE_TRANSLATIONS = {
+      buttons: {
+        cancel: 'Atcelt',
+        remove: 'Atcelt',
+        choose: {
+          files: {
+            one: 'Izvēlēties failu',
+            other: 'Izvēlēties failus'
+          },
+          images: {
+            one: 'Izvēlēties attēlu',
+            other: 'Izvēlēties attēlus'
+          }
+        }
+      }
+    };
+  </script>
+</head>

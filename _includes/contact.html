@@ -1,0 +1,37 @@
+<div class="contact__wrap">
+    <div class="contact">
+        <h2>pasūti dāvanu vai tāpat vien sazinies ar mums</h2>
+        <p>
+            Šobrīd visas dāvanas Rīgas robežās tiek piegādātas ar kurjeru jau izgatavošanas dienā (piegādes maksa 5,50 EUR) un uz Latvijas lielajākajām pilsētām 3 dienu laikā (piegādes maksa atkarīga no pasta izdevumiem). Protams, ka variet arī saņemt dāvanas pie mums ofisā, Rankas ielā 13, bet iepriekš vēlams sazināties, lai pārliecinātos, ka neesam jau devušies pie klientiem nodot dāvanas.
+Arī ziedu piegāde Rīgā ir iespējama kopā ar pasūtīto dāvanu.
+        </p>
+
+        <form id="contactform" method="POST">
+            <input type="email" name="_replyto" placeholder="* E-pasts" data-mail="input" novalidate="novalidate">
+            <input type="hidden" name="_next" value="{{ page.url | prepend: site.baseurl }}" />
+            <input type="hidden" name="_subject" value="" data-mail="caption" />
+            <textarea name="message" placeholder="* Ziņojums" data-text="area"></textarea>
+            <input type="text" name="_gotcha" style="display:none" />
+
+            <select data-select="select">
+                <option value="">Izvēlēties</option>
+                {% for post in site.posts %}
+                <option value="{{ post.title }}">{{ post.title }}</option>
+                {% endfor %}
+            </select>
+            <input type="hidden" name="picture" role="uploadcare-uploader" data-tabs="file" data-multiple="true" data-multiple-max="20" data-images-only="false" data-image-shrink="1024x1024" data-clearable="true" data-system-dialog="true"/>
+
+            <input type="submit" value="Sūtīt" data-submit="submit">
+        </form>
+    </div>
+
+    <div class="overlay"></div>
+</div>
+
+<script type="text/javascript" src="/js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="/js/sweetalert.min.js"></script>
+<script src="https://ucarecdn.com/widget/2.3.4/uploadcare/uploadcare.full.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkupYPctjIkfJybpHvbas6OH2l-DExsB0"></script>
+<script type="text/javascript" src="/js/gmap.js"></script>
+<script type="text/javascript" src="/js/tinyScripts.js"></script>
+<script type="text/javascript" src="/js/email.js"></script>
