@@ -1,9 +1,9 @@
 ---
 
-title:  "Galda spēles ar foto"
-cena:   "38€ (cena var mainīties no spēles lieluma)"
-apraksts: "Galda spēle ar foto un Jūsu noteikumiem. Ir jauni spēļu veidi - pārveidosim tos kā vēlaties. Lieliska dāvana ko dāvināt puisim vai meitenei, kuriem patīk atraktīvs laiks draugu kompānijā."
-kaa_pasuutiit:  "atsūtiet bildes, un pastāstiet vēlmes"
+title:  "Настольные Игры"
+cena:   "38€ -"
+apraksts: "описание"
+kaa_pasuutiit: "описание"
 
 images:
  - image: produkti/galda_spele/1.jpg
