@@ -2,8 +2,8 @@
 
 title:  "Номерной Знак"
 cena:   "10€ "
-apraksts: "Auto numura zīmes ar vārdu vai ko smieklīgu virsū. Apakšā arī vieta, kur ievietojas oriģināli apsveikumi dzimšanas dienā vai kāds sauklis."
-kaa_pasuutiit:  "atsūtiet vārdu ko likt virsū"
+apraksts: "описание"
+kaa_pasuutiit:  "описание"
 
 images:
  - image: produkti/numura_zime/1.jpg
