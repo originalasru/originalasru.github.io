@@ -1,8 +1,8 @@
 <div class="contact__wrap">
     <div class="contact">
-        <h2>pasūti dāvanu vai tāpat vien sazinies ar mums</h2>
+        <h2>Закажи подарок или свяжись с нами</h2>
         <p>
-            описание
+            Все подарки по Риге доставляются курьером в день изготовления (цена доставки 5,50 EUR) и в крупные города Латвии в течении 3 дней (цена доставки зависит от почтовых расходов). Так же можете получить подарки и у нас в офисе на ул. Ранкас 13, предворительно договорившись о встрече. Возможна доставка цветов вместе с заказанным подарком по Риге.
         </p>
 
         <form id="contactform" method="POST">
@@ -13,7 +13,7 @@
             <input type="text" name="_gotcha" style="display:none" />
 
             <select data-select="select">
-                <option value="">Izvēlēties</option>
+                <option value="">Выберете</option>
                 {% for post in site.posts %}
                 <option value="{{ post.title }}">{{ post.title }}</option>
                 {% endfor %}
